@@ -64,14 +64,14 @@
             <div class="stepwizard">
                 <div class="stepwizard-row setup-panel">
                     <div class="stepwizard-step col-xs-3">
-                        <a href="DateTimeSelection.html" class="btn btn-circle btn-default btn-success border-danger">
+                        <a href="DateTimeSelection.html" class="btn btn-circle btn-default">
                             <i class="fa-solid fa-futbol"></i>
 
                         </a>
                         <h3>Select Field</h3>
                     </div>
                     <div class="stepwizard-step col-xs-3">
-                        <a href="PersonalInfo.html" class="btn btn-default btn-circle">
+                        <a href="PersonalInfo.html" class="btn btn-default btn-circle btn-success border-danger">
                             <i class="fa fa-user"></i>
                         </a>
                         <h3>Personal Info</h3>
@@ -93,88 +93,56 @@
             <!-- End progress Icons -->
         </div>
 
-        <div class="row">&nbsp;</div>
+
+
 
         <div class="row">
-            <div class="col col-6">
-                <label for="dtpicker">Choose Date</label>
-                <div class='input-group date' id='dtpicker'>
-                    <input type='text' class="form-control" />
-                    <span class="input-group-addon">
-                    <span class="glyphicon glyphicon-calendar"></span>
-                    </span>
+            <div class="col">
+                <h3 class="booking-heading-2 black-color">Personal Info</h3>
+                <div class="contact-form">
+                    <div class="sidebar-widget">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <div class="form-group firstname">
+                                    <label for="inputfirstname" class="form-label">First Name</label>
+                                    <input type="text" name="first-name" class="form-control" id="inputfirstname" placeholder="First Name">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <div class="form-group lastname">
+                                    <label for="inputlastname" class="form-label">Last Name</label>
+                                    <input type="text" name="last-name" class="form-control" id="inputlastname" placeholder="Last Name">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <div class="form-group address-line-1">
+                                    <label for="inputaddress-line1" class="form-label">ID CARD</label>
+                                    <input type="text" name="address-line1" class="form-control" id="inputaddress-line1" placeholder="Address Line 1">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <div class="form-group address-line-2">
+                                    <label for="inputaddress-line2" class="form-label">Mobile</label>
+                                    <input type="text" name="address-line2" class="form-control" id="inputaddress-line2" placeholder="Address Line 2">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
                 </div>
             </div>
-            <div class="col col-3">
-                <label for="timeIn">From</label>
-                <div class='input-group date' id='timeIn'>
-                    <input type='text' class="form-control" />
-                    <span class="input-group-addon">
-                  <span class="glyphicon glyphicon-calendar"></span>
-                    </span>
-                </div>
-            </div>
-            <div class="col col-3">
-                <label for="timeOut">To</label>
-                <div class='input-group date' id='timeOut'>
-                    <input type='text' class="form-control" />
-                    <span class="input-group-addon">
-                  <span class="glyphicon glyphicon-calendar"></span>
-                    </span>
-                </div>
-            </div>
+
         </div>
 
-        <div class="row">&nbsp;</div>
 
-        <div class="row">
-            <div class="col col-6">
-                <div class="card">
-                    <img src="https://source.unsplash.com/400x250/?statidum" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title"><b>Full - Grass Floor Field</b></h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the .</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col col-6">
-                <div class="card">
-                    <img src="https://source.unsplash.com/400x250/?football" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title"><b>Full - Rubber Floor Field</b></h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the .</p>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <div class="row">&nbsp;</div>
 
-        <div class="row">
-            <div class="col col-6">
-                <div class="card">
-                    <img src="https://source.unsplash.com/400x250/?statidum" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title"><b>Half - Grass Floor Field</b></h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the .</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col col-6">
-                <div class="card">
-                    <img src="https://source.unsplash.com/400x250/?football" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title"><b>Half - Rubber Floor Field</b></h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the .</p>
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <div class="row justify-content-center">
             <div class="p-3">
-                <button type="button" class="btn btn-primary btn-lg" onclick="window.location.href='Index.html'">Back</button>
-                <button type="button" class="btn btn-primary btn-lg " onclick="window.location.href='PersonalInfo.html'">Next</button>
+                <button type="button" class="btn btn-primary btn-lg" onclick="window.location.href='DateTimeSelection.html'">Back</button>
+                <button type="button" class="btn btn-primary btn-lg " onclick="window.location.href='ClubPayments.html'">Next</button>
             </div>
         </div>
     </main>
