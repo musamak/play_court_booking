@@ -13,18 +13,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script
-        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/js/bootstrap-datetimepicker.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/css/bootstrap-datetimepicker.min.css">
     <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/jumbotron/">
     <!-- progress bar -->
     <link rel="stylesheet" href="css/progressbar.css">
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
-    
+
 
 </head>
 
@@ -53,8 +51,7 @@
         </symbol>
     </svg>
 
-    <header
-        class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
         <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
             <img src="img/logo.png" style="height: 50px; width: 50px;">
         </a>
@@ -68,100 +65,82 @@
         </ul>
 
         <div class="col-md-3 text-end">
-            <button type="button" class="btn btn-outline-primary me-2"
-                onclick="window.location.href='signin.html'">Login</button>
+            <button type="button" class="btn btn-outline-primary me-2" onclick="window.location.href='signin.html'">Login</button>
             <button type="button" class="btn btn-primary">Sign-up</button>
         </div>
     </header>
     <main>
-        
-    <div class="row">
-        <!-- progress Icons -->
-        <div class="stepwizard">
-            <div class="stepwizard-row setup-panel">
-                <div class="stepwizard-step col-xs-3">
-                    <a href="court_selection.html" class="btn btn-circle btn-default">
-                        <i class="fa-solid fa-futbol"></i>
 
-                    </a>
-                    <h3>Choose Field</h3>
-                </div>
-                <div class="stepwizard-step col-xs-3">
-                    <a href="personal_info.html" class="btn btn-default btn-circle">
-                        <i class="fa fa-user"></i>
-                    </a>
-                    <h3>Personal Info</h3>
-                </div>
-                <div class="stepwizard-step col-xs-3">
-                    <a href="club_payments.html" class="btn btn-default btn-circle btn-success border-danger">
-                        <i class="fa fa-dollar"></i>
-                    </a>
-                    <h3>Payment Info</h3>
-                </div>
-                <div class="stepwizard-step col-xs-3">
-                    <a href="confirmation.html" class="btn btn-default btn-circle">
-                        <i class="fa fa-check"></i>
-                    </a>
-                    <h3>Confirmarion</h3>
+        <!-- progress Icons -->
+        <div class="row justify-content-center">
+            <div class="col-12 col-sm-10 col-md-10 
+                col-lg-9 col-xl-8 text-center ">
+                <div class="px-0  pb-0 ">
+                    <form id="form">
+                        <ul id="progressbar">
+                            <li class="active fa fa-futbol-ball" id="step1">
+                                <strong>Choose Field</strong>
+                            </li>
+                            <li class="active fa fa-user" id="step2"><strong>Personal Info</strong></li>
+                            <li class="active fa fa-money-bill-alt" id="step3"><strong>Payment Info</strong></li>
+                            <li class="fa fa-check-circle" id="step4"><strong>Confirmation</strong></li>
+                        </ul>
+                        <br>
+
+                    </form>
                 </div>
             </div>
         </div>
         <!-- End progress Icons -->
-    </div>
-    <div class="row">
-        <div class="card">
-            <div class="card-header">
-                <h4 class="card-title">Payment Information</h4>
-            </div>
-            <div class="card-body">
-                <div class="card-pay">
-                    <ul class="tabs-menu nav">
-                        <li><a href="#tab21" data-bs-toggle="tab" class="payment-icon"><i class="fa fa-money-bill"></i>
-                                Cash</a></li>
-                        <li class="bg-grey"><a href="#tab22" data-bs-toggle="tab" class="payment-icon active"><i
-                                    class="fa fa-bank"></i> Bank Transfer</a></li>
-                    </ul>
-                    <div class="tab-content">
 
-                        <div class="tab-pane" id="tab21">
-                            <p>You can pay in cash when you arrive to the field location</p>
-                            <p class="mb-0"><strong>Note:</strong> Nemo enim ipsam voluptatem quia voluptas sit
-                                aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui
-                                ratione voluptatem sequi nesciunt. </p>
-                        </div>
-                        <div class="tab-pane active" id="tab22">
-                            <p>Bank account details</p>
-                            <dl class="card-text">
-                                <dt>BANK: </dt>
-                                <dd> THE UNION BANK 0456</dd>
-                            </dl>
-                            <dl class="card-text">
-                                <dt>Account Number: </dt>
-                                <dd> 67542897653214</dd>
-                            </dl>
-                            <dl class="card-text">
-                                <dt>IBAN: </dt>
-                                <dd>543218769</dd>
-                            </dl>
-                            <div class="form-group">
-                                <label for="payment">Bank Transaction Receipt</label>
-                                <input type="file" name="payment" id="payment" class="form-control-file">
+        <div class="row">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">Payment Information</h4>
+                </div>
+                <div class="card-body">
+                    <div class="card-pay">
+                        <ul class="tabs-menu nav">
+                            <li><a href="#tab21" data-bs-toggle="tab" class="payment-icon"><i class="fa fa-money-bill"></i>
+                                Cash</a></li>
+                            <li class="bg-grey"><a href="#tab22" data-bs-toggle="tab" class="payment-icon active"><i
+                                    class="fa fa-bank"></i> Bank Transfer</a></li>
+                        </ul>
+                        <div class="tab-content">
+
+                            <div class="tab-pane" id="tab21">
+                                <p>You can pay in cash when you arrive to the field location</p>
+                                <p class="mb-0"><strong>Note:</strong> Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </p>
                             </div>
-                            <p class="mb-0"><strong>Note:</strong> Nemo enim ipsam voluptatem quia voluptas sit
-                                aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui
-                                ratione voluptatem sequi nesciunt. </p>
+                            <div class="tab-pane active" id="tab22">
+                                <p>Bank account details</p>
+                                <dl class="card-text">
+                                    <dt>BANK: </dt>
+                                    <dd> THE UNION BANK 0456</dd>
+                                </dl>
+                                <dl class="card-text">
+                                    <dt>Account Number: </dt>
+                                    <dd> 67542897653214</dd>
+                                </dl>
+                                <dl class="card-text">
+                                    <dt>IBAN: </dt>
+                                    <dd>543218769</dd>
+                                </dl>
+                                <div class="form-group">
+                                    <label for="payment">Bank Transaction Receipt</label>
+                                    <input type="file" name="payment" id="payment" class="form-control-file">
+                                </div>
+                                <p class="mb-0"><strong>Note:</strong> Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
         <div class="row justify-content-center">
             <div class="p-3">
-                <button type="button" class="btn btn-primary btn-lg"
-                    onclick="window.location.href='personal_info.html'">Back</button>
-                <button type="button" class="btn btn-primary btn-lg "
-                    onclick="window.location.href='confirmation.html'">Next</button>
+                <button type="button" class="btn btn-primary btn-lg" onclick="window.location.href='personal_info.html'">Back</button>
+                <button type="button" class="btn btn-primary btn-lg " onclick="window.location.href='confirmation.html'">Next</button>
             </div>
         </div>
     </main>
@@ -189,9 +168,7 @@
     </footer>
     </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script>
         function handleClick(cb) {
             if (cb.checked) {

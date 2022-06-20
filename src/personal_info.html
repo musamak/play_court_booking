@@ -47,13 +47,12 @@
           </path>
         </symbol>
       </svg>
-    
-      <header
-        class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
         <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
-          <img src="img/logo.png" style="height: 50px; width: 50px;">
+            <img src="img/logo.png" style="height: 50px; width: 50px;">
         </a>
-    
+
         <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
             <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
             <li><a href="#" class="nav-link px-2 link-dark">About</a></li>
@@ -61,47 +60,35 @@
             <li><a href="#" class="nav-link px-2 link-dark">Pricing</a></li>
             <li><a href="#" class="nav-link px-2 link-dark">FAQs</a></li>
         </ul>
-    
+
         <div class="col-md-3 text-end">
-          <button type="button" class="btn btn-outline-primary me-2"
-            onclick="window.location.href='signin.html'">Login</button>
-          <button type="button" class="btn btn-primary">Sign-up</button>
+            <button type="button" class="btn btn-outline-primary me-2" onclick="window.location.href='signin.html'">Login</button>
+            <button type="button" class="btn btn-primary">Sign-up</button>
         </div>
-      </header>
+    </header>
     <main>
-        <div class="row">
-            <!-- progress Icons -->
-            <div class="stepwizard">
-                <div class="stepwizard-row setup-panel">
-                    <div class="stepwizard-step col-xs-3">
-                        <a href="court_selection.html" class="btn btn-circle btn-default">
-                            <i class="fa-solid fa-futbol"></i>
-    
-                        </a>
-                        <h3>Choose Field</h3>
-                    </div>
-                    <div class="stepwizard-step col-xs-3">
-                        <a href="personal_info.html" class="btn btn-default btn-circle">
-                            <i class="fa fa-user"></i>
-                        </a>
-                        <h3>Personal Info</h3>
-                    </div>
-                    <div class="stepwizard-step col-xs-3">
-                        <a href="club_payments.html" class="btn btn-default btn-circle btn-success border-danger">
-                            <i class="fa fa-dollar"></i>
-                        </a>
-                        <h3>Payment Info</h3>
-                    </div>
-                    <div class="stepwizard-step col-xs-3">
-                        <a href="confirmation.html" class="btn btn-default btn-circle">
-                            <i class="fa fa-check"></i>
-                        </a>
-                        <h3>Confirmarion</h3>
-                    </div>
+        <!-- progress Icons -->
+        <div class="row justify-content-center">
+            <div class="col-12 col-sm-10 col-md-10 
+                    col-lg-9 col-xl-8 text-center ">
+                <div class="px-0  pb-0 ">
+                    <form id="form">
+                        <ul id="progressbar">
+                            <li class="active fa fa-futbol-ball" id="step1">
+                                <strong>Choose Field</strong>
+                            </li>
+                            <li class="active fa fa-user" id="step2"><strong>Personal Info</strong></li>
+                            <li class="fa fa-money-bill-alt" id="step3"><strong>Payment Info</strong></li>
+                            <li class="fa fa-check-circle" id="step4"><strong>Confirmation</strong></li>
+                        </ul>
+                        <br>
+
+                    </form>
                 </div>
             </div>
-            <!-- End progress Icons -->
         </div>
+        <!-- End progress Icons -->
+
 
         <div class="row">
             <div class="col">
